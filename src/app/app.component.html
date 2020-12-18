@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab#3</title>
+</head>
+<body>
+  <h1>To buy list</h1>
+  <div class="shopping-list-container">
+    <div class="to-buy-list">
+      <list-component title="To Buy" showTextIfEmpty="Everything is bought" [items]="getToBuyList()" [hasRemoveBtn]="true"></list-component>
+    </div>
+    <div class="purchased-list">
+      <list-component title="Purchased" showTextIfEmpty="Nothing has been bought yet" [items]="getPurchasedList()"></list-component>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<p>{{ title }}</p>
+<ul>
+    <li *ngFor="let item of items; index as i">
+        buy {{item.quantity}} {{item.name}}{{ item.quantity > 1 ? "s" : ""}}
+        <button *ngIf="hasRemoveBtn" (click)="moveToPurchased(i)">Bought</button>
+    </li>
+    <div *ngIf="items.length === 0">
+        {{ showTextIfEmpty }}
+    </div>
+</ul>
